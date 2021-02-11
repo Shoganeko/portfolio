@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
 
     p, h1, h2, h3 {
         color: white;
+        font-weight: 300;
     }
 
     a {

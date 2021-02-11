@@ -1,10 +1,9 @@
 import Head from "next/head";
-import { Children } from "react";
 import Main from "./Main";
 
 type LayoutProps = {
     title?: string,
-    children: JSX.Element
+    children: JSX.Element[] | JSX.Element
 }
 
 const Layout = ({ title, children }: LayoutProps) => {

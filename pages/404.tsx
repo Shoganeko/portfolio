@@ -1,5 +1,13 @@
+import Link from "next/link"
+import Layout from "../components/Layout";
+
 const NotFound = () => {
-    return <>That page could not be found.</>
+    return (
+        <Layout>
+            <h1>That page could not be found.</h1>
+            <Link href="/">back to safety.</Link>
+        </Layout>
+    );
 }
 
 export default NotFound;
