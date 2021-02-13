@@ -40,6 +40,7 @@ export default class PortfolioDocument extends Document {
                 <Head>
                     <link rel="preconnect" href="https://fonts.gstatic.com"/>
                     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"/> 
+                    <meta name="keywords" content="aj kneisl, ajkneisl" />
                 </Head>
                 <body>
                     <Main />

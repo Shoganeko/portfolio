@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styled from "styled-components";
-import Layout from "../components/Layout";
-import Logo from "../components/Logo";
+import Layout from "../app/components/Layout";
+import Logo from "../app/components/Logo";
 
 type ProjectArgs = {
     title: string;
@@ -14,17 +14,14 @@ const Project = ({ title, desc, links, icons }: ProjectArgs) => {
     const ProjectBody = styled.div`
         border-radius: 4px;
         position: relative;
-        background-color: whitesmoke;
+        color: white;
+        background-color: #1d1b1c;
         padding-left: 16px;
         padding-right: 16px;
         padding-bottom: 16px;
         min-height: 232px;
 
         max-width: 256px;
-
-        a {
-            color: black;
-        }
 
         p {
             margin-bottom: 32px;
@@ -53,11 +50,6 @@ const Project = ({ title, desc, links, icons }: ProjectArgs) => {
                 justify-content: space-evenly;
                 list-decoration: none;
             }
-        }
-
-        h1,
-        p {
-            color: black;
         }
     `;
 

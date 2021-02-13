@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Layout from '../components/Layout';
+import Layout from '../app/components/Layout';
 import Link from "next/link"
 
 const Title = styled.h1`
