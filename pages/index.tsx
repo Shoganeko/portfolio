@@ -23,9 +23,8 @@ const Home = () => {
             <p>react & kotlin developer</p>
 
             <Navigation>
-                <Link href="/about">about</Link>
                 <Link href="/portfolio">portfolio</Link>
-                <Link href="mailto:aj@ajkneisl.dev">aj@ajkneisl.dev</Link>
+                <Link href="/contact">contact</Link>
             </Navigation>
         </Layout>
     );

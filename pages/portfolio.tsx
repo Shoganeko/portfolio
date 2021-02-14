@@ -77,7 +77,15 @@ const ProjectLists = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    max-width: 816px;
+    max-width: 256px;
+    min-width: 256px;
+    @media only screen and (min-width: 600px) {
+        max-width: 520px;
+    }
+
+    @media only screen and (min-width: 830px) {
+        max-width: 816px;
+    }
 `;
 
 const Title = styled.div`
