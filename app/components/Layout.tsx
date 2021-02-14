@@ -11,7 +11,7 @@ const Layout = ({ title, children }: LayoutProps) => {
         <>
             <Head>
                 <title>{title === undefined ? "AJ Kneisl" : title}</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/icon.jpg" />
             </Head>
 
             <Main>
