@@ -38,8 +38,15 @@ export default class PortfolioDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-                    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"/> 
+                    <link rel="preconnect" href="https://fonts.gstatic.com" />
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+                        rel="stylesheet"
+                    />
+                    <link
+                        rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+                    />
                     <meta name="keywords" content="aj kneisl, ajkneisl" />
                 </Head>
                 <body>

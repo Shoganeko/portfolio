@@ -1,4 +1,3 @@
-import { DefaultSeo } from "next-seo";
 import { AppProps } from "next/dist/next-server/lib/router/router";
 import { createGlobalStyle } from "styled-components";
 import Seo from "../app/util/Seo"
@@ -38,7 +37,7 @@ const Portfolio = ({ Component, pageProps }: AppProps) => {
         <>
             <GlobalStyle/>
             {Seo}
-            <Component {...pageProps} />;
+            <Component {...pageProps} />
         </>
     );
 }

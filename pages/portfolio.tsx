@@ -8,10 +8,19 @@ type ProjectArgs = {
     desc: string;
     links: JSX.Element[];
     icons: JSX.Element[] | JSX.Element;
+    index: number
 };
 
-const Project = ({ title, desc, links, icons }: ProjectArgs) => {
-    const ProjectBody = styled.div`
+type ProjectStyleArgs = {
+    duration: number
+}
+
+const Project = ({ title, desc, links, icons, index }: ProjectArgs) => {
+    const ProjectBody = styled.div<ProjectStyleArgs>`
+        animation: fadeIn;
+
+        ${({ duration }: ProjectStyleArgs) => `animation-duration: ${duration}s;` }
+
         border-radius: 4px;
         position: relative;
         color: white;
@@ -54,7 +63,9 @@ const Project = ({ title, desc, links, icons }: ProjectArgs) => {
     `;
 
     return (
-        <ProjectBody>
+        <ProjectBody
+            duration={index}
+        >
             <h1>{title}</h1>
             <p>{desc}</p>
             <div className="project-footer">
@@ -107,6 +118,7 @@ const Portfolio = () => {
             </Title>
             <ProjectLists>
                 <Project
+                    index={0}
                     title="Unifey"
                     desc="An open-source social media platformed focused on privacy."
                     links={[
@@ -117,6 +129,7 @@ const Portfolio = () => {
                 />
 
                 <Project
+                    index={1}
                     title="Buta"
                     desc="A bot for the chatting platform Discord. Provides a elegant user experience with it's integrated web panel."
                     links={[
@@ -126,6 +139,7 @@ const Portfolio = () => {
                 />
 
                 <Project
+                    index={2}
                     title="SpotKey"
                     desc="An open-source way to add short-cuts onto Spotify."
                     icons={[<Logo name={"kotlin"} />]}
@@ -137,6 +151,7 @@ const Portfolio = () => {
                 />
 
                 <Project
+                    index={3}
                     title="Portfolio"
                     desc="This portfolio. Made in Next.js and hosted using Vercel."
                     icons={[<Logo name={"react"} />]}
