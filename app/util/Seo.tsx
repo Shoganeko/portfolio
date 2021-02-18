@@ -7,6 +7,12 @@ const Seo = <DefaultSeo
     canonical="https://www.ajkneisl.dev"
     openGraph={{
         url: "https://www.ajkneisl.dev",
+        images: [
+            {
+                alt: "Logo",
+                url: "https://ajkneisl.dev/icon.jpg"
+            }
+        ],
         locale: "en_NA",
         title: "AJ Kneisl",
         description: "Kotlin & React Developer"
