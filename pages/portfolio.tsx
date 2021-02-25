@@ -122,7 +122,7 @@ const Portfolio = () => {
                     title="Unifey"
                     desc="An open-source social media platformed focused on privacy."
                     links={[
-                        <a href="https://github.com/unifeyapp">GitHub</a>,
+                        <a href="https://github.com/unifey-net">GitHub</a>,
                         <a href="https://unifey.net">Unifey</a>,
                     ]}
                     icons={[<Logo name={"react"} />, <Logo name={"kotlin"} />]}
