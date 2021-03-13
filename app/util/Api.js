@@ -3,6 +3,7 @@ import fs from "fs"
 import { join } from "path";
 import remark from "remark";
 import html from "remark-html";
+import path from "path"
 
 const docsDirectory = join(process.cwd(), `public${path.sep}changelogs`);
 
