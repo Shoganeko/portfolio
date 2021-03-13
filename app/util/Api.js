@@ -4,7 +4,7 @@ import { join } from "path";
 import remark from "remark";
 import html from "remark-html";
 
-const docsDirectory = join(process.cwd(), "public\\changelogs");
+const docsDirectory = join(process.cwd(), `public${path.sep}changelogs`);
 
 export function getDocBySlug(slug) {
     const realSlug = slug.replace(/\.md$/, "");
